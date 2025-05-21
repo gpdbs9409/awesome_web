@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 40px 60px;
+      color: #333;
+    }
+
+    h2 {
+      color: #2d2b64;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      margin-bottom: 30px;
+      color: #777;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .project-content h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .project-content p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .tech-stack {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      padding: 0 20px 20px;
+    }
+
+    .buttons button {
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      transition: background-color 0.2s;
+    }
+
+    .buttons button:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Projects</h2>
+  <p class="subtitle">Things I've built so far</p>
+
+  <div class="projects-container">
+    
+    <div class="project-card">
+      <img src="project1.png" alt="Project 1">
+      <div class="project-content">
+        <h3>Project Title goes here</h3>
+        <p>This is sample project description. Random things are here in description. Lorem ipsum for dummy content.</p>
+        <div class="tech-stack"><strong>Tech stack:</strong> HTML, JavaScript, SASS, React</div>
+      </div>
+      <div class="buttons">
+        <button>🔗 Live Preview</button>
+        <button>👁️ View Code</button>
+      </div>
+    </div>
+
+    <!-- 5개 더 복붙해서 아래에 붙이면 됩니다. 썸네일만 변경 -->
+
+  </div>
+
+</body>
+</html>
