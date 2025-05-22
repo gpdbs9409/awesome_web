@@ -152,28 +152,52 @@ header h1 span {
     padding-bottom: 24px;
   }
 }
+/* ✅ PC 버전 기본 */
 .tech-stacks {
   display: flex;
-  gap: 50px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 14.88px; /* 좌우 여백 고려한 간격 */
+  padding: 0;
+  list-style: none;
 }
+
 .tech-stacks li {
+  width: 92.6px;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.tech-stacks img {
+  width: 92.6px;
+  height: 104px;
+  object-fit: contain;
 }
 
 #tech-stack {
   padding-bottom: 300px;
 }
+
+/* ✅ 모바일 전용 (768px 이하) */
 @media (max-width: 768px) {
   .tech-stacks {
-    gap: 8px;
     justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .tech-stacks li {
+    width: 80px;
+    height: 80px;
   }
 
   .tech-stacks img {
     width: 80px;
     height: 80px;
   }
+
   #tech-stack {
     padding-bottom: 160px;
   }
